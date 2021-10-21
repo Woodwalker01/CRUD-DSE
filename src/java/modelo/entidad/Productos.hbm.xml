@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-17-2021 03:36:10 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entidad.Productos" table="productos" catalog="productos" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="60" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="Descripcion" length="1" />
+        </property>
+        <property name="precio" type="java.lang.Long">
+            <column name="precio" precision="10" scale="0" />
+        </property>
+        <property name="existencia" type="java.lang.Long">
+            <column name="existencia" precision="10" scale="0" />
+        </property>
+        <property name="fechallegada" type="string">
+            <column name="fechallegada" length="60" />
+        </property>
+    </class>
+</hibernate-mapping>
